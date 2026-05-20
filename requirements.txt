@@ -1,0 +1,7 @@
+# Skycak bans external libraries for most of the book.
+# Standard library only through ~ch27.
+# Add here only when a chapter explicitly requires it.
+
+# Part V+ (neural nets, plotting results) — uncomment when you get there:
+# numpy
+# matplotlib
