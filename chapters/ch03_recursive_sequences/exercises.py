@@ -23,7 +23,15 @@ def calc_nth_term_seq1(n: int) -> int:
 
 # Sequence 2: starting with 25, if even take half, if odd multiply by 3 and add 1 (Collatz)
 def calc_first_n_terms_seq2(n: int) -> list:
-    pass
+    terms = [25]
+
+    
+
+    return terms
+
+
+
+
 
 def calc_nth_term_seq2(n: int) -> int:
     pass
