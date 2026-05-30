@@ -3,10 +3,22 @@
 
 # Sequence 1: starting with 5, multiply previous term by 3 and subtract 4
 def calc_first_n_terms_seq1(n: int) -> list:
-    pass
+    terms = [5]
+
+    while(len(terms) < n):
+        prev_term = terms[-1]
+        next_term = (prev_term * 3) - 4
+        terms.append(next_term)
+
+    return terms
+
 
 def calc_nth_term_seq1(n: int) -> int:
-    pass
+    if(n==1):
+        return 5
+
+    prev_term = calc_nth_term_seq1(n-1)
+    return (prev_term * 3) - 4
 
 
 # Sequence 2: starting with 25, if even take half, if odd multiply by 3 and add 1 (Collatz)
